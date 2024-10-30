@@ -14,6 +14,16 @@
 
 
 }
+iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+    iframe {
+        height: 400px; 
+    }
+}
 * {
     padding: 0;
     margin: 0;
@@ -168,4 +178,200 @@ ul.menu-src li a.selected {
         display: block;
     }
 }
-/* finalizamos el header
+/* finalizamos el header*/
+
+
+.contact {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.contact-form {
+    border: 1px solid var(--light-color);
+    padding: 100px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.section-title {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: var(--text-title);
+    border-bottom: 1px solid var(--light-color);
+    margin-bottom: 25px;
+    color: var(--light-color);
+
+}
+.texto {
+    color: var(--light-color);
+    background-color: transparent;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid var(--light-color);
+    resize: none;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-family: var(--text-font);
+
+}
+.camp{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: var(--text-font);
+    box-shadow: none;
+    outline: none;
+    color: var(--light-color);
+    border:transparent;
+
+}
+.form-input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: var(--text-font);
+    box-shadow: none;
+    outline: none;
+    color: var(--light-color);
+    border:1px solid var(--light-color);
+}
+.form-btn{
+    color: var(--light-color);
+    padding: 15px 60px;
+    border: 2px solid var(--secundary-color);
+    text-decoration: none;
+    margin-top: 40px;
+    background-color: var(--secundary-color);
+    max-width: 250px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    color: var(--blue-color);
+    background-color: transparent;
+
+}
+@media(max-width :800px) {
+    .contact-form{
+        width: 140%;
+    }
+}
+/* inicio del footer */
+footer {
+    background-color: var(--primary-color);
+    color:var(--light-color);
+    padding: 20px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+.parrafo1{
+    font-size: 15px;
+    font-family: var(--text-font);
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 150px; 
+    max-width: 200px; 
+}
+
+.footer-item h2 {
+    margin-top: 0;
+    font-family: var(--title-font);
+    font-size: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.link1, .link1:hover {
+    color: var(--light-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--text-font);
+    font-size: 15px;
+}
+
+button {
+    background-color: #007BFF;
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.footer-section1, .footer-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 60px;
+    margin-left: 109px;
+    
+    
+}
+
+.link1 {
+    color: white;
+    text-decoration: none;
+    margin: 5px 5px; 
+}
+
+.link1:hover {
+    text-decoration: underline;
+}
+
+.footer-section1 p {
+    margin: 10px 0; 
+}
+
+.iconosi {
+    font-size: 20px;
+    margin: 27px;
+    display: flex;
+    gap: 33px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .footer-section1, .footer-section2{
+        flex-direction: column;
+        align-items: center ;
+        margin: auto;
+    }
+
+    .footer-item {
+        max-width: none; 
+        text-align: center;
+    }
+}

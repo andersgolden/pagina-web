@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -16,19 +21,46 @@
 
     <section class="contact">
         <h1 class="section-title">Contactanos</h1>
-        <form action="#" class="contact-form">
-            <label class="camp" for="name">Name</label>
-            <input type="text" id="name" name="name" required class="form-input">
-            <label class="camp" for="email">Email</label>
-            <input type="text" id="email" name="email" required class="form-input">
-            <label class="camp" for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required class="form-input">
-            <label class="camp" for="message">Message</label>
-            <textarea class="texto" name="message" id="message" placeholder="Escriba aqui su mensaje"></textarea>
-            <button type="submit" class="form-btn">Send</button>
+        <form action="#" class="contact-form" id="contactform">
+            <label class="camp" for="name">Nombre</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+            <label id="errorname" class="error" style="display: none;">Por favor, introduce un nombre valido</label>
+
+            <label class="camp" for="email">Correo electronico</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <label id="erroremail" class="error" style="display: none;">Por favor, introduce un correo electronico valido</label>
+
+            <label class="camp" for="phone">Telefono</label>
+            <input type="phone" name="phone" class="form-control" id="phone" aria-describedby="emailHelp">
+            <label id="errorphone" class="error" style="display: none;">Por favor, introduce un numero de telefono valido</label>
+
+            <label class="camp" for="message">Mensaje</label>
+            <textarea class="form-control" name="message" id="message" placeholder="Escriba aqui su mensaje"></textarea>
+
+            <button type="button" id="submitBtn" class="form-btn">Enviar</button>
         </form>
+
+        <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="/assets/imagenes/logo1.png" alt="" height="40px">
+
+                    </div>
+                    <div class="modal-body">
+
+                        Gracias por contactarse con nosostros. Hemos recibido tu mensaje , pronto nos pondremos en contacto.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </section>
     <iframe src="footer.html" class="footer-frame"></iframe>
+
+    <script src="contact.js"></script>
+
 
 </body>
 

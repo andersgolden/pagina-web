@@ -873,7 +873,7 @@ button:hover {
 /* inicio banner*/
 
 .banner {
-    background-image: url("/assets/imagenes/banner.jpg");
+    background-image: url("./assets/imagenes/carro.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

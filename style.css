@@ -12,26 +12,6 @@
 
 /* inicio animaciones */
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 
 /*fin de animaciones*/
 
@@ -51,13 +31,13 @@
 .header-frame {
     border: none;
     width: 100%;
-    height: 250px;
+    height: 70px;
     margin-top: 0%;
 }
 
 @media(max-width:600px) {
     .header-frame {
-        height: 383px;
+        height: 70px;
     }
 }
 
@@ -95,9 +75,6 @@ header {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    min-height: 10vh;
-    height: auto;
-    margin-bottom: 0px;
     padding-bottom: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -182,6 +159,8 @@ ul.menu-src li a.selected {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    background-image: url("./assets/imagenes/Hero-section.png");
+    margin-top: 2px;
 }
 
 .header-content-text {
@@ -883,7 +862,6 @@ button:hover {
     justify-content: center;
     padding: 20px;
     text-align: center;
-    margin-top: -29px;
 }
 
 .h1-banner {
@@ -1334,4 +1312,136 @@ button:hover {
     .section-terminos {
         margin: 10px 20px;
     }
+}
+
+
+/* inico de sesion*/
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url("/assets/imagenes/Hero-section.png");
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.inicio-sesion {
+    position: relative;
+    background-color: white;
+    width: 800px;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 10px 0 #00a6bc;
+}
+
+.inicio-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-title {
+    font-size: 35px;
+    font-family: var(--title-font);
+}
+
+.inp-div {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.inp-usuario {
+    border: none;
+    outline: none;
+    background: none;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-family: 17px;
+    color: black;
+}
+
+.inicio-btn {
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #0ef, #c800ff);
+}
+
+.no-text {
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.link-inicio {
+    color: blue;
+    text-decoration: none;
+}
+
+.banner-inicio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: linear-gradient(to right, #0ef, #c800ff);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+    padding-right: 70px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.title-banner {
+    font-size: 40px;
+    margin-top: -50px;
+    line-height: 50px;
+}
+
+@media(max-width:700px) {
+    .banner-inicio {
+        display: none;
+    }
+    .login {
+        width: 100%;
+    }
+    .inicio-sesion {
+        box-sizing: border-box;
+        box-shadow: none;
+        border: none;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+
+/*fin del inicio de sesion*/
+
+
+/*inicio de registrarme*/
+
+.google-bt {
+    margin-top: 10px;
+}
+
+.google-btn {
+    color: var(--blue-color);
 }

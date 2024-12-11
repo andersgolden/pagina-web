@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
 
 
 </head>
@@ -27,7 +29,19 @@
                 <a href="#" class="btns1">Registrarse</a>
 
             </div>
-            <img src="./assets/imagenes/menu_icon.png" class="menu-mobile" width="36" height="21">
+
+
+            <label for="check" class="menu-mobile"> 
+                <img src="./assets/imagenes/menu_icon.png" width="36" height="21">
+            </label>
+            <input type="checkbox" id="check" style="display: none;">
+
+            <div class="menu-desplegable" id="menudesplegable">
+                <a href="index.html" class="selected" target="_parent">Inicio</a>
+                <a href="inicio.html" target="_blank">Iniciar Sesion</a>
+                <a href="registrarme.html" target="_blank">Registrarse</a>
+            </div>
+
         </nav>
 
 

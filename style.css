@@ -728,6 +728,7 @@ button:hover {
         font-size: 22px;
         padding-right: 30px;
         padding-top: 3px;
+        margin-top: -10px;
     }
 }
 
@@ -1524,7 +1525,7 @@ button:hover {
         align-items: center;
     }
     .inicio-form {
-        padding-left: 70px;
+        padding-left: 30px;
     }
 }
 

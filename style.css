@@ -720,6 +720,7 @@ button:hover {
         text-align: center;
         width: 100%;
         margin-left: 25px;
+        padding-top: 20px;
     }
     .introducion1 {
         width: 90%;
@@ -1519,7 +1520,11 @@ button:hover {
         box-shadow: none;
         border: none;
         padding: 10px;
-        max-width: 100%;
+        width: 95%;
+        align-items: center;
+    }
+    .inicio-form {
+        padding-left: 70px;
     }
 }
 
@@ -1547,19 +1552,23 @@ button:hover {
 
 /*Recuperar contraseña*/
 
-.recuperar-title {
-    font-size: 30px;
+.inicio-titl {
+    font-size: 25px;
     font-family: var(--title-font);
 }
 
+.recuperar-p {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
 .recuperar-btn {
-    border: none;
-    outline: none;
-    width: 188px;
-    margin-top: 25px;
-    font-size: 20px;
-    border-radius: 40px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    background: linear-gradient(45deg, #0ef, #c800ff);
+    font-size: 10px;
+    padding: 2px 2px;
+    margin-left: 235px;
+}
+
+.inicios-titl {
+    font-size: 25px;
+    font-family: var(--text-font);
 }

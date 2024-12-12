@@ -73,7 +73,8 @@
     <div class="banner">
         <div>
             <h1 class="h1-banner">¡Bienvenido a Nuestra Tienda!</h1>
-            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='Alquila.html'">Alquilar Ahora</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='Alquila.html'">Alquilar
+                Ahora</button>
 
         </div>
     </div>
@@ -143,13 +144,13 @@
             <p class="introducion1">Entendemos la importancia de maximizar la eficiencia y minimizar los costos. Nuestro servicio de alquiler de equipos está diseñado específicamente para ofrecerte las mejores soluciones sin comprometer tu presupuesto</p>
 
             <svg class="curved-text">
-            <defs>
-                <path id="curve" d="M40,70 C80,50 350,50 450,150 " />
-            </defs> 
-            <text class="realistic-text">
-                <textPath href="#curve"> PRESTALO </textPath>
-            </text>
-        </svg>
+                <defs>
+                    <path id="curve" d="M40,70 C80,50 350,50 450,150 " />
+                </defs>
+                <text class="realistic-text">
+                    <textPath href="#curve"> PRESTALO </textPath>
+                </text>
+            </svg>
             <button class="leer0" onclick="window.location.href='Descripcion.html'"> Como funcionamos? </button>
         </div>
 
@@ -161,7 +162,8 @@
     <!--section 6-->
     <section class="enlaces6 ">
         <h2 class="title-testimonio ">Lo que dicen nuestros clientes</h2>
-        <div class="testimonios-container ">
+        <div class="testimonios-container " id="flechas">
+            <button class="arrow arrow-left" onclick="prevSlide()">&#9664;</button>
 
 
             <div class="general-testimonios ">
@@ -331,6 +333,7 @@
 
 
             </div>
+            <button class="arrow arrow-right" onclick="nextSlide()">&#9654;</button>
         </div>
     </section>
     <!--fin de section-->
@@ -382,6 +385,7 @@
             </div>
         </div>
     </footer>
+    <script src="flechas.js"></script>
 </body>
 
 </html>

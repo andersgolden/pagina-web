@@ -195,20 +195,6 @@ ul.menu-src li a.selected {
     cursor: pointer;
 }
 
-
-/*
-.menu-desplegable {
-    display: none;
-    background-color: #333;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-}
-*/
-
 .menu-desplegable {
     display: none;
     background-color: #333;
@@ -1048,6 +1034,7 @@ button:hover {
 /* section 6 */
 
 .enlaces6 {
+    position: relative;
     padding: 40px 20px;
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -1096,6 +1083,36 @@ button:hover {
     object-fit: cover;
     margin-right: 5px;
     transition: transform 0.3s
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 10px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    outline: none;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:active {
+    background: white;
+}
+
+.arrow-left {
+    left: 0px;
+    padding: -20px;
+}
+
+.arrow-right {
+    right: 0px;
+    padding: -20px;
 }
 
 .horizontal-img6:hover {
@@ -1178,6 +1195,12 @@ button:hover {
     .general-testimonios {
         min-width: 100%;
         scroll-snap-align: center;
+    }
+}
+
+@media(min-width:700px) {
+    .arrow {
+        display: none;
     }
 }
 

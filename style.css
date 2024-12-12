@@ -398,7 +398,7 @@ ul.menu-src li a.selected {
         background-color: var(--blue-color);
     }
     .error {
-        width: 250%;
+        width: 160%;
     }
 }
 

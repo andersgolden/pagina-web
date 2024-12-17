@@ -12,6 +12,11 @@
 
 /* inicio animaciones */
 
+* {
+    outline: 1px solid red;
+    /* Esto ayudará a identificar visualmente los elementos problemáticos */
+}
+
 
 /*fin de animaciones*/
 
@@ -608,59 +613,47 @@ button {
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: 2px;
+    justify-content: center;
+    width: 100vw;
 }
-
-
-/*
-.enlaces1:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.horizontal-img {
-    flex: 1;
-    max-width: 350px;
-    height: 330px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.horizontal-img:hover {
-    transform: scale(1.05);
-}
-*/
 
 .general {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .introducion1 {
     width: 40%;
     font-size: 23px;
     font-family: var(--text-font);
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
     color: var(--light-color);
-    margin-left: 40px;
+    align-items: left;
+    padding: 0 10px;
+    margin-left: 400px;
 }
 
 .title {
     font-size: 50px;
     font-family: var(--text-title);
     color: var(--light-color);
-    margin-right: 40px;
-    margin-top: -50px;
-    margin-bottom: 15px;
+    padding-right: 30px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    text-align: center;
 }
 
 .curved-text {
     position: absolute;
     width: 20%;
-    margin-top: 181px;
+    margin-top: 31vh;
     height: auto;
-    margin-right: 968px;
+    padding-left: 27px;
 }
 
 .realistic-text {
@@ -697,24 +690,26 @@ button:hover {
 @media(max-width:500px) {
     .enlaces1 {
         width: 100%;
-    }
-    .general {
-        width: 100%;
-        text-align: center;
+        background-image: url("./assets/imagenes/Hero-section.png");
+        height: 63vh;
+        align-content: flex-start;
     }
     .title {
-        text-align: center;
         width: 100%;
-        margin-left: 25px;
-        padding-top: 20px;
+        font-size: 20px;
+    }
+    .curved-text {
+        display: none;
     }
     .introducion1 {
-        width: 90%;
+        width: 100%;
+        font-size: 17px;
+        font-family: var(--text-font);
+        color: var(--light-color);
+        align-items: left;
+        padding: 0 10px;
+        margin-left: 2vw;
         text-align: left;
-        font-size: 22px;
-        padding-right: 30px;
-        padding-top: 3px;
-        margin-top: -10px;
     }
 }
 

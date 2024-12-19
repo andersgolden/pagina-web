@@ -713,13 +713,12 @@ button:hover {
         display: none;
     }
     .introducion1 {
-        width: 100%;
-        font-size: 1.5em;
+        width: 90%;
+        font-size: 1.4em;
         font-family: var(--text-font);
         color: var(--light-color);
-        align-items: left;
         padding: 0 10px;
-        margin-left: 2vw;
+        margin-left: 1.5vw;
         text-align: left;
     }
 }

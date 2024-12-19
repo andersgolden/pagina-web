@@ -175,6 +175,10 @@ ul.menu-src li a.selected {
     max-width: 500px;
 }
 
+.prestalo {
+    font-size: 25px;
+}
+
 .header-title {
     font-size: 30px;
     margin-bottom: 10px;
@@ -269,6 +273,13 @@ ul.menu-src li a.selected {
     .menu-desplegable {
         margin-top: 40px;
         width: 100%;
+    }
+    .prestalo {
+        font-size: 1.5em;
+        text-align: left;
+    }
+    .header-title {
+        font-size: 1.7em;
     }
 }
 
@@ -703,7 +714,7 @@ button:hover {
     }
     .introducion1 {
         width: 100%;
-        font-size: 17px;
+        font-size: 1.5em;
         font-family: var(--text-font);
         color: var(--light-color);
         align-items: left;
@@ -916,6 +927,12 @@ button:hover {
     -webkit-text-stroke: 1px;
 }
 
+@media(max-width:700px) {
+    .h1-banner {
+        font-size: 3em;
+    }
+}
+
 
 /*fin banner*/
 
@@ -1011,6 +1028,7 @@ button:hover {
     }
     .title {
         align-items: center;
+        font-size: 1.5em;
     }
     .introducion3 {
         width: 90%;
@@ -1022,6 +1040,19 @@ button:hover {
         justify-content: center;
         align-items: center;
         max-width: 700px;
+    }
+}
+
+@media(max-width:700px) {
+    .title-explora {
+        font-size: 1.5em;
+    }
+    .title4 {
+        font-size: 1.5em;
+        align-items: center;
+    }
+    .introducion4 {
+        font-size: 1.5em;
     }
 }
 

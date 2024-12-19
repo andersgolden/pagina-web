@@ -282,6 +282,10 @@ ul.menu-src li a.selected {
     }
     .header-title {
         font-size: 1.7em;
+        margin-left: -3rem;
+    }
+    .img-logo {
+        width: 50vw;
     }
 }
 
@@ -385,24 +389,24 @@ ul.menu-src li a.selected {
 }
 
 @media(max-width :800px) {
+    .contact {
+        width: 100%;
+    }
     .contact-form {
-        width: 127%;
+        width: 90vw;
     }
     .form-control {
-        width: 160%;
+        width: 80vw;
     }
     .camp {
-        width: 165%;
-    }
-    .texto {
-        width: 200%;
+        width: 84vw;
     }
     .form-btn:hover {
         color: var(--terceary-color);
         background-color: var(--blue-color);
     }
     .error {
-        width: 160%;
+        width: 79vw;
     }
 }
 
@@ -606,7 +610,7 @@ button {
 
 @media(max-width:700px) {
     .catalogo {
-        width: 100%;
+        width: 95vw;
     }
 }
 
@@ -708,20 +712,25 @@ button:hover {
         align-content: flex-start;
     }
     .title {
-        width: 100%;
-        font-size: 20px;
+        width: 100vw;
+        font-size: 1.5em;
+        margin-left: -3rem;
     }
     .curved-text {
         display: none;
     }
     .introducion1 {
-        width: 90%;
-        font-size: 1.4em;
+        width: 90vw;
+        font-size: 1.2em;
         font-family: var(--text-font);
         color: var(--light-color);
         padding: 0 10px;
-        margin-left: 1.5vw;
+        margin-left: 1.4vw;
         text-align: left;
+    }
+    .general {
+        width: 100vw;
+        padding-left: 1rem;
     }
 }
 
@@ -1564,18 +1573,41 @@ button:hover {
         display: none;
     }
     .login {
-        width: 100%;
+        max-width: 100%;
     }
     .inicio-sesion {
         box-sizing: border-box;
         box-shadow: none;
         border: none;
         padding: 10px;
-        width: 95%;
+        width: 90vw;
         align-items: center;
     }
     .inicio-form {
-        padding-left: 30px;
+        width: 89.3vw;
+        margin-left: -0.6em;
+    }
+    .inicio-title {
+        font-size: 2rem;
+        margin-left: -1.7em;
+    }
+    .inp-div {
+        width: 87vw;
+        margin-left: 0.7em;
+        margin-right: 0.7em;
+    }
+    .inp-usuario {
+        width: 70vw;
+    }
+    .fa-solid {
+        margin-left: 2em;
+    }
+    .inicio-btn {
+        margin-left: -2em;
+        width: 70vw;
+    }
+    .no-text {
+        margin-right: 3.5em;
     }
 }
 
